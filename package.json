@@ -1,0 +1,19 @@
+{
+  "name": "aws-paramas-maintainer",
+  "version": "0.1.0",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/server",
+    "dev": "nodemon --watch src -e js,jsx src/server",
+    "create-params": "node src/create-parameters"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "joi": "^17.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
