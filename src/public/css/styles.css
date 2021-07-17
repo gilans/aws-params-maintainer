@@ -1,0 +1,60 @@
+/* creating css loader */
+
+#loading {
+  width: 2rem;
+  height: 2rem;
+  border: 5px solid #f3f3f3;
+  border-top: 6px solid #9c41f2;
+  border-radius: 100%;
+  margin: auto;
+  display: none;
+  animation: spin 1s infinite linear;
+}
+#loading.display {
+  display: block;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#content {
+  padding-left: 16px;
+}
+#content.hide {
+  display: none;
+}
+
+.paths-select__container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.paths-select__container label {
+  margin-bottom: 8px;
+}
+.paths-select__container select {
+  outline: none;
+  width: max-content;
+}
+#parameter-list {
+  list-style: none;
+}
+#parameter-list li {
+  display: flex;
+  height: 25px;
+  margin-bottom: 8px;
+}
+.parameter-list__name {
+  width: 300px;
+}
+.parameter-list__type {
+  width: 100px;
+}
+.parameter-list__value {
+  width: 500px;
+}
